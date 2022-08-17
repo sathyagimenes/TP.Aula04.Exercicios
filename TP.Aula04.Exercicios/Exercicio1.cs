@@ -69,7 +69,7 @@ namespace TP.Aula04.Exercicios
             if (!Int32.TryParse(number, out n))
             {
                 lblError.Text = "Número Inválido\n" +
-                        "Exemplo de número válido: (10)";
+                        "Exemplo de número válido: 10";
                 return false;
             }
             return true;
