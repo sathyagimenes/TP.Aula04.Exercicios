@@ -64,6 +64,7 @@ namespace TP.Aula04.Exercicios
             {
                 if (!Int32.TryParse(num, out n))
                 {
+                    lblDiferenca.Text = "0";
                     lblError.Text = "Lista de números inválida\n" +
                         "Exemplo de lista válida: 1, 2, 3, -4";
                     listaString.Clear();
@@ -71,8 +72,7 @@ namespace TP.Aula04.Exercicios
                 }
                 else if (listaString.Count() < 2)
                 {
-                    lblError.Text = "Quantidade de números inválida\n" +
-                        "Exemplo de lista válida: 1, 2, 3, -4";
+                    lblDiferenca.Text = "0";
                     listaString.Clear();
                     return false;
                 }
